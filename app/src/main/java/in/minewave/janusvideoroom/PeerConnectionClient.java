@@ -463,7 +463,7 @@ public class PeerConnectionClient {
   }
 
   public boolean isHDVideo() {
-    return videoWidth * videoHeight >= 1280 * 720;
+    return videoWidth * videoHeight >= HD_VIDEO_WIDTH * HD_VIDEO_HEIGHT;
   }
 
   private void getStats(final BigInteger handleId) {
